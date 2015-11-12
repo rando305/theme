@@ -169,22 +169,22 @@
         % if has_extauth_info is UNDEFINED:
 
         <ol class="list-input">
-          <li class="field required text" id="field-email">
-            <label for="email">${_('E-mail')}</label>
-            <input class="" id="email" type="email" name="email" value="${email}" placeholder="${_('example: username@domain.com')}" required aria-required="true"
-            readonly="readonly"/>
-          </li>
+          <!--<li class="field required text" id="field-email">-->
+            <!--<label for="email">${_('E-mail')}</label>-->
+            <!--<input class="" id="email" type="email" name="email" value="${email}" placeholder="${_('example: username@domain.com')}" required aria-required="true"-->
+            <!--readonly="readonly"/>-->
+          <!--</li>-->
 
           <li class="field required text" id="field-name">
             <label for="name">${_('Full Name')}</label>
             <input id="name" type="text" name="name" value="${name}" placeholder="${_('example: Jane Doe')}" required aria-required="true" aria-describedby="name-tip" />
             <span class="tip tip-input" id="name-tip">${_("Needed for any certificates you may earn")}</span>
           </li>
-          <li class="field required text" id="field-username">
-            <label for="username">${_('Public Username')}</label>
-            <input id="username" type="text" name="username" value="${username}" placeholder="${_('example: JaneDoe')}" required aria-required="true" aria-describedby="username-tip"/>
-            <span class="tip tip-input" id="username-tip">${_('Will be shown in any discussions or forums you participate in')} <strong>(${_('cannot be changed later')})</strong></span>
-          </li>
+          <!--<li class="field required text" id="field-username">-->
+            <!--<label for="username">${_('Public Username')}</label>-->
+            <!--<input id="username" type="text" name="username" value="${username}" placeholder="${_('example: JaneDoe')}" required aria-required="true" aria-describedby="username-tip"/>-->
+            <!--<span class="tip tip-input" id="username-tip">${_('Will be shown in any discussions or forums you participate in')} <strong>(${_('cannot be changed later')})</strong></span>-->
+          <!--</li>-->
 
           <!--% if third_party_auth.is_enabled() and running_pipeline:-->
 
@@ -211,20 +211,20 @@
 
         <ol class="list-input">
 
-          % if ask_for_email:
+          <!--% if ask_for_email:-->
 
-          <li class="field required text" id="field-email" >
-            <label for="email">${_("E-mail")} </label>
-            <input class="" id="email" type="email" name="email" value="" placeholder="${_('example: username@domain.com')}" />
-          </li>
+          <!--<li class="field required text" id="field-email" >-->
+            <!--<label for="email">${_("E-mail")} </label>-->
+            <!--<input class="" id="email" type="email" name="email" value="" placeholder="${_('example: username@domain.com')}" />-->
+          <!--</li>-->
 
-          % endif
+          <!--% endif-->
 
-          <li class="field required text" id="field-username">
-            <label for="username">${_('Public Display Name')}</label>
-            <input id="username" type="text" name="username" value="${extauth_username}" placeholder="${_('example: JaneDoe')}" required aria-required="true" aria-describedby="username-tip" />
-            <span class="tip tip-input" id="id="username-tip>${_('Will be shown in any discussions or forums you participate in')} <strong>(${_('cannot be changed later')})</strong></span>
-          </li>
+          <!--<li class="field required text" id="field-username">-->
+            <!--<label for="username">${_('Public Display Name')}</label>-->
+            <!--<input id="username" type="text" name="username" value="${extauth_username}" placeholder="${_('example: JaneDoe')}" required aria-required="true" aria-describedby="username-tip" />-->
+            <!--<span class="tip tip-input" id="id="username-tip>${_('Will be shown in any discussions or forums you participate in')} <strong>(${_('cannot be changed later')})</strong></span>-->
+          <!--</li>-->
 
           % if ask_for_fullname:
 

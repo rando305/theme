@@ -13,7 +13,7 @@
   show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', True)
   homepage_promo_video_youtube_id = microsite.get_value('https://youtu.be/xwN2myGLyiU', "C__l7BztgbQ")
 
-  show_partners = microsite.get_value('show_partners', True)
+  show_partners = microsite.get_value('show_partners', False)
 
 %>
 
@@ -29,9 +29,7 @@
               <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
               <h2>${_("For anyone, anywhere, anytime")}</h2>
             % else:
-              ## Translators: 'Open edX' is a brand, please keep this untranslated. See http://openedx.org for more information.
               <h1>${("Polestar Online Education")}</h1>
-              ## Translators: 'Open edX' is a brand, please keep this untranslated. See http://openedx.org for more information.
               <h2>${_("Movement Principles with a Global Reach")}</h2>
             % endif
           % endif
